@@ -133,17 +133,18 @@ const Projects = () => {
                 className="group bg-slate-900/50 rounded-lg overflow-hidden border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:transform hover:scale-105"
               >
                 {/* Imagen proyecto */}
-                <div className="relative h-82 bg-slate-800 overflow-hidden border-3 border-slate-700">
+                <div className="relative h-48 sm:h-56 md:h-64 bg-slate-800 overflow-hidden border border-slate-700">
                   {project.imageUrl ? (
                     <Image
                       src={project.imageUrl}
                       alt={project.name}
                       fill
-                      className="object-cover object-center  transition-transform duration-300"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-700">
-                      <Code2 className="h-16 w-16 text-slate-500" />
+                      <Code2 className="h-12 w-12 sm:h-16 sm:w-16 text-slate-500" />
                     </div>
                   )}
                   

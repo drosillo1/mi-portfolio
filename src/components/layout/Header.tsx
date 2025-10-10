@@ -186,11 +186,11 @@ useEffect(() => {
       {/* Easter egg */}
       {showEasterEgg && (
         <div 
-          className="fixed inset-0 bg-gradient-to-br from-black/95 via-slate-900/90 to-black/95 backdrop-blur-md flex items-center justify-center z-[9999] animate-in fade-in duration-700 p-4"
+          className="fixed inset-0 bg-gradient-to-br from-black/95 via-slate-900/90 to-black/95 backdrop-blur-md flex items-center justify-center z-[9999] animate-in fade-in duration-700 p-4 overflow-y-auto"
           onClick={() => setShowEasterEgg(false)}
         >
           <div 
-            className="relative bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl max-w-md w-full text-center border border-slate-700/50 transform animate-bounce-fade-in duration-500 ease-out"
+            className="relative bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95 backdrop-blur-xl rounded-3xl p-4 sm:p-6 shadow-2xl w-full max-w-[90%] sm:max-w-md text-center border border-slate-700/50 transform animate-bounce-fade-in duration-500 ease-out my-4 sm:my-0"
             onClick={(e) => e.stopPropagation()}
             style={{
               boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
@@ -199,47 +199,47 @@ useEffect(() => {
             {/* Botón cerrar */}
             <button
               onClick={() => setShowEasterEgg(false)}
-              className="absolute top-3 right-3 text-white hover:text-slate-400 transition-all duration-300 hover:bg-slate-900 rounded-full cursor-pointer p-2 backdrop-blur-sm border border-slate-600/30 hover:border-slate-500/50 group"
+              className="absolute -top-2 -right-2 z-50 text-white hover:text-slate-400 transition-all duration-300 bg-slate-800 hover:bg-slate-700 rounded-full cursor-pointer p-2 backdrop-blur-sm border border-slate-600/30 hover:border-slate-500/50 shadow-lg"
+              aria-label="Cerrar"
             >
-              <X className="h-4 w-4 " />
+              <X className="h-4 w-4" />
             </button>
 
             {/* Header del easter */}
-            <div className="mb-">
+            <div className="mb-4">
               <div className="relative flex items-center justify-center mb-4">
-                <div className="absolute w-20 h-20 bg-gradient-to-r from-yellow-400/20 via-orange-500/20 to-yellow-400/20 blur-xl rounded-full"></div>
+                <div className="absolute w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-r from-yellow-400/20 via-orange-500/20 to-yellow-400/20 blur-xl rounded-full"></div>
                 <div className="relative">
-                  <Trophy className="h-16 w-16 text-yellow-400 drop-shadow-lg animate-tada" />
+                  <Trophy className="h-12 w-12 sm:h-16 sm:w-16 text-yellow-400 drop-shadow-lg animate-tada" />
                 </div>
               </div>
               
-              <h2 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent mb-3 animate-pulse">
+              <h2 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent mb-3 animate-pulse">
                 ¡LOGRO DESBLOQUEADO!
               </h2>
               
-              <div className="relative bg-gradient-to-r from-slate-800/80 via-slate-700/80 to-slate-800/80 mb-3 rounded-xl px-4 py-3 border border-pink-400/30 backdrop-blur-sm">
+              <div className="relative bg-gradient-to-r from-slate-800/80 via-slate-700/80 to-slate-800/80 mb-3 rounded-xl px-3 sm:px-4 py-2 sm:py-3 border border-pink-400/30 backdrop-blur-sm">
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-400/5 via-purple-500/10 to-slate-400/5 rounded-xl"></div>
-                <h3 className="relative text-lg font-bold text-white">«Explorador Nato»</h3>
+                <h3 className="relative text-base sm:text-lg font-bold text-white">«Explorador Nato»</h3>
               </div>
             </div>
 
-            {/* GIF*/}
-            <div className="mb-6 relative overflow-hidden rounded-2xl border border-pink-400/30 bg-slate-800/50 ">
+            {/* GIF */}
+            <div className="mb-4 sm:mb-6 relative overflow-hidden rounded-2xl border border-pink-400/30 bg-slate-800/50">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10"></div>
               <img
-                // src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3J4MzQxdDcweGprM3BtYWsydGN4ejJ1Zzh2dHh4dWt1OW13cGFmcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif?speed=0.5"
                 src="https://www.likeinteligente.org/wp-content/uploads/2023/10/68747470733a2f2f6d656469612e74656e6f722e636f6d2f7a7a6e746d325f3942336741414141432f6861636b65722e676966.gif"
                 alt="Desarrollador programando"
                 className="w-full rounded-2xl"
                 style={{ 
-                  height: '200px', 
+                  height: '150px',
                   objectFit: 'cover',
                 }}
               />
             </div>
 
             {/* Detalles del achievement */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-700/40 backdrop-blur-sm rounded-2xl p-4 mb-6 border border-pink-400/30">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-700/40 backdrop-blur-sm rounded-2xl p-3 sm:p-4 mb-4 sm:mb-6 border border-pink-400/30">
               <div className="text-left space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-slate-400 text-sm font-semibold">Descripción:</span>
@@ -263,12 +263,12 @@ useEffect(() => {
             </div>
 
             {/* Botones contactar o después */}
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <p className="text-white text-sm font-medium">
                 ¿Reclamar recompensa?
               </p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                 <button
                   onClick={handleClaimReward}
                   className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold px-5 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/25 flex items-center justify-center gap-2 border border-green-400/30 backdrop-blur-sm"

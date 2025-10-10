@@ -80,7 +80,7 @@ const Hero = () => {
               <span className="text-purple-400">Frontend React / Next.js</span>
             </p>
             <p className="text-lg text-slate-400">
-              Murcia, España 🇪🇸. Especializado en aplicaciones web modernas y escalables.
+              Murcia, España. Especializado en aplicaciones web modernas y escalables.
             </p>
           </div>
 

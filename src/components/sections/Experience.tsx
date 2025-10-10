@@ -28,7 +28,7 @@ const Experience = () => {
       id: 'personal-projects',
       company: 'Proyectos Personales',
       position: 'Desarollador Web Fullstack',
-      period: 'Agosto 2025 - Actualemente',
+      period: 'Agosto 2025 - Actualmente...',
       description: 'Desarrollo de aplicaciones web modernas como proyectos personales y portfolio. Creación de interfaces interactivas y responsivas, implementación de CRUD completo, integración con bases de datos y consumo de APIs externas. Enfocado en buenas prácticas, experiencia de usuario y aprendizaje continuo de nuevas tecnologías.',
       technologies: ['React', 'Tailwind CSS', 'Next.js', 'TypeScript', 'Prisma', 'Supabase'],
       current: true
