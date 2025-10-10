@@ -114,15 +114,22 @@ const Contact = () => {
                 </div>
               </a>
 
-              <div className="flex items-center p-4 bg-slate-800/50 rounded-lg border border-slate-700">
-                <div className="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+              <a 
+                href="https://www.google.com/maps/place/Murcia,+España"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center p-4 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-purple-400 hover:bg-slate-800/70 transition-all duration-300 group"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 transition-colors duration-300">
                   <MapPin className="h-6 w-6 text-purple-400" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-white font-semibold">Ubicación</h4>
-                  <p className="text-slate-400">{contactInfo.location}</p>
+                  <p className="text-slate-400 group-hover:text-purple-400 transition-colors duration-300">
+                    {contactInfo.location}
+                  </p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
