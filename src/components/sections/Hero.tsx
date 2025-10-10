@@ -41,7 +41,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-400 rounded-full p-1">
                 <div className="w-full h-full bg-slate-950 rounded-full overflow-hidden">
                   <Image
-                    src="/images/FotoPF.jpg" 
+                    src="/images/fotoperfil.jpg" 
                     alt="Foto de perfil"
                     width={160}
                     height={160}
