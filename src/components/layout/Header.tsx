@@ -212,9 +212,13 @@ useEffect(() => {
             <h2 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent mb-2 sm:mb-3 animate-pulse">
               ¡LOGRO DESBLOQUEADO!
             </h2>
+            <div className="relative bg-gradient-to-r from-slate-800/80 via-slate-700/80 to-slate-800/80 mb-3 rounded-xl px-3 sm:px-4 py-2 sm:py-3 border border-pink-400/30 backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-400/5 via-purple-500/10 to-slate-400/5 rounded-xl"></div>
+                <h3 className="relative text-base sm:text-lg font-bold text-white">«Explorador Nato»</h3>
+              </div>
           </div>
 
-          {/* GIF más pequeño en móvil */}
+          {/* GIF */}
           <div className="mb-3 sm:mb-6 relative overflow-hidden rounded-xl sm:rounded-2xl border border-pink-400/30 bg-slate-800/50">
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10"></div>
             <img
@@ -228,7 +232,7 @@ useEffect(() => {
             />
           </div>
 
-          {/* Contenido más compacto en móvil */}
+          {/* Detalles del achievement */}
           <div className="bg-gradient-to-br from-slate-800/60 to-slate-700/40 backdrop-blur-sm rounded-xl sm:rounded-2xl p-2 sm:p-4 mb-3 sm:mb-6 border border-pink-400/30">
             <div className="text-left space-y-2 sm:space-y-3">
               <div className="flex items-center justify-between">
@@ -240,6 +244,14 @@ useEffect(() => {
               <p className="text-white text-xs sm:text-sm leading-relaxed">
                 ¡Buen ojo! Has demostrado la misma curiosidad y atención al detalle que aplico en cada proyecto.
               </p>
+              <div className="border-t border-pink-400/30 pt-3">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-slate-400 text-sm font-semibold">Recompensa:</span>
+                  </div>
+                  <p className="text-white text-sm leading-relaxed">
+                    Un café virtual para charlar de tus proyectos o ideas.
+                  </p>
+                </div>
             </div>
           </div>
 
