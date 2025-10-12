@@ -56,7 +56,7 @@ const Hero = () => {
                 onClick={() => {
                   document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="absolute -bottom-2 right-0.5 bg-blue-500 text-white text-xs px-3 py-1 rounded-full border-2 border-slate-950 focus:outline-none hover:bg-blue-700  transition-colors cursor-pointer"
+                className="absolute -bottom-2 right-0.5 bg-blue-500 text-white text-[10px] sm:text-xs px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-2 border-slate-950 focus:outline-none hover:bg-blue-700 transition-colors cursor-pointer"
                 aria-label="Ir a contacto"
               >
                 <div className="flex items-center space-x-1">
