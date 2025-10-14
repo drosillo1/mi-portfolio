@@ -75,8 +75,8 @@ const Hero = () => {
               Daniel Rosillo Barnés
             </h1>
             <p className="text-xl md:text-2xl text-slate-400 mb-2">
-              <span className="text-cyan-400">+1 Año de experiencia.</span>{' '}
-              <span className="text-blue-500">Desarrollador SAP UI5.</span>{' '}
+              <span className="text-cyan-400">+1 Año de experiencia en desarollo.</span>{' '}
+              <span className="text-blue-500">SAP UI5/ Fiori.</span>{' '}
               <span className="text-purple-400">Frontend React / Next.js</span>
             </p>
             <p className="text-lg text-slate-400">

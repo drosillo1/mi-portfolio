@@ -11,7 +11,7 @@ const Projects = () => {
     {
       id: 'gamenook',
       name: 'GameNook',
-      description: 'Plataforma que permite decubrir, reseñar y compartir tus videojuegos favoritos, además de conectar con otros gamers y encontrar tu próxima aventura',
+      description: 'Plataforma que permite descubrir, reseñar y compartir tus videojuegos favoritos, además de conectar con otros gamers y encontrar tu próxima aventura',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'Node.js'],
       imageUrl: '/images/gamenook.jpg',
       demoUrl: '',
@@ -21,7 +21,7 @@ const Projects = () => {
     {
       id: 'sap-example',
       name: 'App empresa energética (SAP UI5)',
-      description: 'Implementación de nuevas funcionalidades y mantenimiento en aplicación de una importante empresa energética en SAP UI5, usada para la gestión de obras e integrada con servicios OData',
+      description: 'Implementación de nuevas funcionalidades y mantenimiento en aplicación de una importante empresa energética en SAP UI5, usada para la gestión de procesos e integrada con servicios OData',
       technologies: ['SAP UI5', 'Fiori', 'OData', 'XML Views', 'JavaScript', 'Node.js'],
       imageUrl: '/images/dashboardexample.jpg',
       demoUrl: '',
@@ -242,7 +242,7 @@ const Projects = () => {
           })}
         </div>
 
-        {/* Filtro vacío por si algun dia me quedo sin proyectos en desarollo por ejemplo */}
+        {/* Filtro vacío por si algun dia me quedo sin proyectos en desarrollo por ejemplo */}
         {filteredProjects.length === 0 && (
           <div className="text-center py-12">
             <Code2 className="h-16 w-16 text-slate-600 mx-auto mb-4" />

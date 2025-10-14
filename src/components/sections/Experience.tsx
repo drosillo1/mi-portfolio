@@ -10,7 +10,7 @@ const Experience = () => {
     {
       id: 'sap-ui5',
       company: 'NTT Data',
-      position: 'Desarollador SAP UI5',
+      position: 'Desarrollador SAP UI5',
       period: 'Junio 2025 - Actualmente...',
       description: 'Desarrollo y mantenimiento de aplicaciones empresariales con SAP UI5 y Fiori, implementando interfaces de usuario modernas y responsivas, trabajando en equipo siguiendo buenas prácticas de desarrollo, testing y despliegue continuo.',
       technologies: ['SAP UI5', 'SAP Fiori', 'OData', 'JavaScript', 'MVC', 'XML', 'Git', 'Jira'],
@@ -27,7 +27,7 @@ const Experience = () => {
     {
       id: 'personal-projects',
       company: 'Proyectos Personales',
-      position: 'Desarollador Web Fullstack',
+      position: 'Desarrollador Web Fullstack',
       period: 'Agosto 2025 - Actualmente...',
       description: 'Desarrollo de aplicaciones web modernas como proyectos personales y portfolio. Creación de interfaces interactivas y responsivas, implementación de CRUD completo, integración con bases de datos y consumo de APIs externas. Enfocado en buenas prácticas, experiencia de usuario y aprendizaje continuo de nuevas tecnologías.',
       technologies: ['React', 'Tailwind CSS', 'Next.js', 'TypeScript', 'Prisma', 'Supabase'],

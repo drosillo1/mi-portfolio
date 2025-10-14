@@ -12,7 +12,7 @@ const AboutMe = () => {
   {
     category: 'Frontend',
     technologies: [
-      { name: 'SAP UI5', level: 80, years: '1 año' },
+      { name: 'SAP UI5', level: 80, years: '<1 año' },
       { name: 'JavaScript / TypeScript', level: 85, years: '1 año' },
       { name: 'React / Next.js', level: 70, years: '<1 año' },
       { name: 'HTML / CSS', level: 85, years: '+1 año' },
@@ -137,7 +137,7 @@ const AboutMe = () => {
                   </div>
                   <div className="flex items-center justify-center text-slate-400">
                     <Calendar className="h-4 w-4 mr-2" />
-                    +1 año de experiencia
+                    +1 año de experiencia en desarollo
                   </div>
                   <div className="flex items-center justify-center text-slate-400">
                     <Award className="h-4 w-4 mr-2" />
