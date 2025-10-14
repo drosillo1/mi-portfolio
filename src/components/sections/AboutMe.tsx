@@ -137,7 +137,7 @@ const AboutMe = () => {
                   </div>
                   <div className="flex items-center justify-center text-slate-400">
                     <Calendar className="h-4 w-4 mr-2" />
-                    +1 año de experiencia en desarollo
+                    +1 año de experiencia
                   </div>
                   <div className="flex items-center justify-center text-slate-400">
                     <Award className="h-4 w-4 mr-2" />
