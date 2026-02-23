@@ -31,7 +31,7 @@ const Projects = () => {
     {
       id: 'gamenook',
       name: 'GameNook',
-      description: 'Plataforma que permite descubrir, reseñar y compartir tus videojuegos favoritos, además de conectar con otros gamers y encontrar tu próxima aventura',
+      description: 'GameNook es una plataforma integral que permite descubrir, reseñar y compartir tus videojuegos favoritos. Los usuarios pueden conectar con otros gamers, crear una red de contactos, explorar recomendaciones personalizadas, y encontrar tu próxima aventura.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'Node.js'],
       imageUrl: '/images/gamenook.jpg',
       demoUrl: '',
