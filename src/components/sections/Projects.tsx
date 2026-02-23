@@ -9,16 +9,6 @@ import type { Project } from '@/types'
 const Projects = () => {
   const projects: Project[] = [
     {
-      id: 'gamenook',
-      name: 'GameNook',
-      description: 'Plataforma que permite descubrir, reseñar y compartir tus videojuegos favoritos, además de conectar con otros gamers y encontrar tu próxima aventura',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'Node.js'],
-      imageUrl: '/images/gamenook.jpg',
-      demoUrl: '',
-      githubUrl: 'https://github.com/drosillo1/GameNook',
-      status: 'in-development'
-    },
-    {
       id: 'sap-example',
       name: 'App empresa energética (SAP UI5)',
       description: 'Implementación de nuevas funcionalidades y mantenimiento en aplicación de una importante empresa energética en SAP UI5, usada para la gestión de procesos e integrada con servicios OData',
@@ -27,6 +17,26 @@ const Projects = () => {
       demoUrl: '',
       githubUrl: '', 
       status: 'completed'
+    },
+    {
+      id: 'paquitártelas',
+      name: 'Paquitártelas',
+      description: 'Plataforma web personalizada para una psicóloga, que permite a los pacientes conocer sus servicios, reservar sesiones fácilmente a través de WhatsApp, contactar mediante un formulario y acceder a sus redes sociales para mantenerse informados y conectados.',
+      technologies: ['Next.js', 'JavaScript', 'Tailwind CSS', 'EmailJS', 'Node.js'],
+      imageUrl: '/images/projectPaquitartelas.png',
+      demoUrl: 'https://www.paquitartelas.com/',
+      githubUrl: 'https://github.com/drosillo1/paquitartelas-web',
+      status: 'completed'
+    },
+    {
+      id: 'gamenook',
+      name: 'GameNook',
+      description: 'Plataforma que permite descubrir, reseñar y compartir tus videojuegos favoritos, además de conectar con otros gamers y encontrar tu próxima aventura',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'Node.js'],
+      imageUrl: '/images/gamenook.jpg',
+      demoUrl: '',
+      githubUrl: 'https://github.com/drosillo1/GameNook',
+      status: 'in-development'
     },
     {
       id: 'demo-sap',
@@ -47,6 +57,7 @@ const Projects = () => {
   )
 
   const [showAllTechs, setShowAllTechs] = useState<string | null>(null);
+  const [expandedDesc, setExpandedDesc] = useState<string | null>(null);
 
   const getStatusInfo = (status: Project['status']) => {
     switch (status) {
@@ -162,11 +173,20 @@ const Projects = () => {
                   <h3 className="text-xl font-bold text-white mb-2 ">
                     {project.name}
                   </h3>
-                  
-                  <p className="text-slate-400 text-sm mb-4 line-clamp-4">
-                    {project.description}
-                  </p>
-
+                  {/* Descripción expandible */}
+                  <div className="mb-4">
+                    <p className={`text-slate-400 text-sm ${expandedDesc === project.id ? '' : 'line-clamp-4'}`}>
+                      {project.description}
+                    </p>
+                    {project.description.length > 120 && (
+                      <button
+                        className="mt-1 text-xs text-blue-400 underline focus:outline-none"
+                        onClick={() => setExpandedDesc(expandedDesc === project.id ? null : project.id)}
+                      >
+                        {expandedDesc === project.id ? 'Ver menos' : 'Ver más'}
+                      </button>
+                    )}
+                  </div>
                   {/* Tecnologías */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {(showAllTechs === project.id ? project.technologies : project.technologies.slice(0, 3)).map((tech, index) => (
@@ -206,7 +226,7 @@ const Projects = () => {
                         className="inline-flex items-center px-3 py-2 bg-purple-500 text-white text-sm font-medium rounded hover:bg-purple-600 transition-colors duration-300"
                       >
                         <ExternalLink className="h-4 w-4 mr-2" />
-                        Demo
+                        URL
                       </a>
                     )}
                     {project.githubUrl && (
